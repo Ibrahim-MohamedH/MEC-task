@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(180, 175, 252);
+}
+/* ==== header ==== */
+header {
+  background-color: rgb(92, 43, 226);
+}
+header nav {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+header nav .logo img {
+  width: 70px;
+}
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+header nav ul li {
+  padding: 10px;
+  margin: 15px 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+header nav i.fa-bars {
+  display: none;
+  font-size: 45px;
+  margin-top: 10px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+header nav ul .btn {
+  background-color: crimson;
+  border-radius: 10px;
+}
+
+/* ==== main ==== */
+main .caption {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 130px;
+  text-align: center;
+  padding-top: 150px;
+}
+main .caption h1 {
+  font-size: 50px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+main .caption h1 span {
+  font-size: 80px;
+  font-weight: 800;
+}
+main .caption p {
+  font-size: 30px;
+}
+main .cards {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+main .cards .card {
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 10px;
+  width: 30%;
+}
+main .cards .card h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+main .cards .card p {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+main .cards .card .col {
+  display: flex;
+  flex-direction: column;
+}
+main .cards .card .col a {
+  color: white;
+  text-decoration: none;
+  padding: 30px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: red;
+}
+main .cards .card .col .fb {
+  background-color: rgb(1, 101, 225);
+}
+main .cards .card .col .tw {
+  background-color: rgb(29, 155, 240);
+}
+main .cards .card .col .lk {
+  background-color: rgb(10, 102, 194);
+}
+
+/* ======= media query ======= */
+@media (max-width: 1200px) {
+  main .cards {
+    width: 90%;
+  }
+  main .cards .card {
+    width: 32%;
+  }
+}
+@media (max-width: 992px) {
+  header nav ul {
+    display: none;
+  }
+  header nav i.fa-bars {
+    display: inline-block;
+  }
+  main .cards {
+    width: 100%;
+    padding: 10px;
+  }
+  main .cards .card h2 {
+    font-size: 35px;
+  }
+  main .cards .card p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  header nav {
+    width: 100%;
+    padding: 0px 15px;
+  }
+  main .caption {
+    width: 90%;
+  }
+  main .caption h1 {
+    font-size: 35px;
+  }
+  main .caption h1 span {
+    font-size: 45px;
+  }
+  main .caption p {
+    font-size: 25px;
+  }
+  main .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main .cards .card {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+}
